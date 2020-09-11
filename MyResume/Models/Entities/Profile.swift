@@ -10,5 +10,5 @@ import Foundation
 
 struct Profile: Identifiable {
     var id = UUID()
-    var name: String
+    var name: String? 
 }
