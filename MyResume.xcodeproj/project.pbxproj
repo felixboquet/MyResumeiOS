@@ -11,7 +11,6 @@
 		93DA6A4E2523C1B300521A7D /* ProfileAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DA6A4D2523C1B300521A7D /* ProfileAPIError.swift */; };
 		93DD5F5524FE70FE008BE087 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DD5F5424FE70FE008BE087 /* AppDelegate.swift */; };
 		93DD5F5724FE70FE008BE087 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DD5F5624FE70FE008BE087 /* SceneDelegate.swift */; };
-		93DD5F5A24FE70FE008BE087 /* MyResume.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 93DD5F5824FE70FE008BE087 /* MyResume.xcdatamodeld */; };
 		93DD5F5E24FE7100008BE087 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93DD5F5D24FE7100008BE087 /* Assets.xcassets */; };
 		93DD5F6124FE7100008BE087 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93DD5F6024FE7100008BE087 /* Preview Assets.xcassets */; };
 		93DD5F6424FE7100008BE087 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93DD5F6224FE7100008BE087 /* LaunchScreen.storyboard */; };
@@ -19,9 +18,9 @@
 		93DD5F7224FE7F35008BE087 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DD5F7124FE7F35008BE087 /* ProfileView.swift */; };
 		93DD5F7724FE83FF008BE087 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DD5F7624FE83FF008BE087 /* MapView.swift */; };
 		93DD5F7924FE971D008BE087 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DD5F7824FE971D008BE087 /* ProfileViewModel.swift */; };
-		93DD5F7B24FE9756008BE087 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DD5F7A24FE9756008BE087 /* Profile.swift */; };
-		93DD5F7E24FE9E3E008BE087 /* Degree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DD5F7D24FE9E3E008BE087 /* Degree.swift */; };
 		93DD5F8024FF8AEB008BE087 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DD5F7F24FF8AEB008BE087 /* CircleImage.swift */; };
+		93EFAECD25276952001D6029 /* Degree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EFAECB25276952001D6029 /* Degree.swift */; };
+		93EFAECE25276952001D6029 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EFAECC25276952001D6029 /* Profile.swift */; };
 		ACB6DCFF46E4CC0A7EF2B69F /* Pods_MyResume.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA651CEB089D9D570941D237 /* Pods_MyResume.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +31,6 @@
 		93DD5F5124FE70FE008BE087 /* MyResume.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyResume.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93DD5F5424FE70FE008BE087 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93DD5F5624FE70FE008BE087 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		93DD5F5924FE70FE008BE087 /* MyResume.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyResume.xcdatamodel; sourceTree = "<group>"; };
 		93DD5F5D24FE7100008BE087 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93DD5F6024FE7100008BE087 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		93DD5F6324FE7100008BE087 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -41,9 +39,9 @@
 		93DD5F7124FE7F35008BE087 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		93DD5F7624FE83FF008BE087 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		93DD5F7824FE971D008BE087 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
-		93DD5F7A24FE9756008BE087 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
-		93DD5F7D24FE9E3E008BE087 /* Degree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Degree.swift; sourceTree = "<group>"; };
 		93DD5F7F24FF8AEB008BE087 /* CircleImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		93EFAECB25276952001D6029 /* Degree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Degree.swift; sourceTree = "<group>"; };
+		93EFAECC25276952001D6029 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		E60E9BB5ABD25B3F6DAE81DE /* Pods-MyResume.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyResume.release.xcconfig"; path = "Target Support Files/Pods-MyResume/Pods-MyResume.release.xcconfig"; sourceTree = "<group>"; };
 		EA651CEB089D9D570941D237 /* Pods_MyResume.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyResume.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -108,7 +106,6 @@
 				93DD5F5D24FE7100008BE087 /* Assets.xcassets */,
 				93DD5F6224FE7100008BE087 /* LaunchScreen.storyboard */,
 				93DD5F6524FE7100008BE087 /* Info.plist */,
-				93DD5F5824FE70FE008BE087 /* MyResume.xcdatamodeld */,
 				93DD5F6B24FE713F008BE087 /* GoogleService-Info.plist */,
 				93DD5F5F24FE7100008BE087 /* Preview Content */,
 			);
@@ -168,8 +165,8 @@
 		93DD5F7C24FE9CBA008BE087 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				93DD5F7D24FE9E3E008BE087 /* Degree.swift */,
-				93DD5F7A24FE9756008BE087 /* Profile.swift */,
+				93EFAECB25276952001D6029 /* Degree.swift */,
+				93EFAECC25276952001D6029 /* Profile.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -299,12 +296,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				93DD5F7724FE83FF008BE087 /* MapView.swift in Sources */,
+				93EFAECE25276952001D6029 /* Profile.swift in Sources */,
 				931E5EA1250B54FC0082BADF /* DataManager.swift in Sources */,
-				93DD5F7B24FE9756008BE087 /* Profile.swift in Sources */,
 				93DA6A4E2523C1B300521A7D /* ProfileAPIError.swift in Sources */,
 				93DD5F5524FE70FE008BE087 /* AppDelegate.swift in Sources */,
-				93DD5F5A24FE70FE008BE087 /* MyResume.xcdatamodeld in Sources */,
-				93DD5F7E24FE9E3E008BE087 /* Degree.swift in Sources */,
+				93EFAECD25276952001D6029 /* Degree.swift in Sources */,
 				93DD5F8024FF8AEB008BE087 /* CircleImage.swift in Sources */,
 				93DD5F7224FE7F35008BE087 /* ProfileView.swift in Sources */,
 				93DD5F5724FE70FE008BE087 /* SceneDelegate.swift in Sources */,
@@ -504,19 +500,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		93DD5F5824FE70FE008BE087 /* MyResume.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				93DD5F5924FE70FE008BE087 /* MyResume.xcdatamodel */,
-			);
-			currentVersion = 93DD5F5924FE70FE008BE087 /* MyResume.xcdatamodel */;
-			path = MyResume.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 93DD5F4924FE70FE008BE087 /* Project object */;
 }
