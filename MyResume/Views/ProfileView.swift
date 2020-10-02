@@ -13,8 +13,6 @@ struct ProfileView: View {
     
     @ObservedObject var viewModel = ProfileViewModel()
     
-    @State private var name = ""
-    
     var body: some View {
         VStack {
             Spacer()
@@ -28,7 +26,7 @@ struct ProfileView: View {
                     .padding(.bottom, -130)
                 
                 VStack(alignment: .leading) {
-                    Text(name)
+                    Text(viewModel.profile.name ?? "")
                         .font(.title)
                         .foregroundColor(.white)
                     HStack(alignment: .top) {
@@ -42,7 +40,6 @@ struct ProfileView: View {
                     }
                 }.onAppear() {
                     self.viewModel.fetchProfile()
-                    self.name = self.viewModel.profile.name ?? ""
                 }
                 .padding()
                     

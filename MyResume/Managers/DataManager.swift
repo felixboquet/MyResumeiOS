@@ -8,9 +8,12 @@
 
 import Foundation
 import FirebaseFirestore
+import Combine
 
 protocol DataManagerProtocol {
+    var profileList: [Profile] { get }
     func fetchProfile() -> [Profile]
+    func fetchRemoteProfile() -> Future<[Profile], ProfileAPIError>
 }
 
 class DataManager {
@@ -18,34 +21,40 @@ class DataManager {
     private var db = Firestore.firestore()
     var profileList = [Profile]()
     
-    private init() {}
+    private init() { }
 }
 
 // MARK: - DataManagerProtocol implementation
 extension DataManager: DataManagerProtocol {
     
     func fetchProfile() -> [Profile] {
-        fetchRemoteProfile()
-        
         return profileList
     }
     
-    private func fetchRemoteProfile() {
-        db.collection("profile").addSnapshotListener { (querrySnapshot, error) in
-            guard let documents = querrySnapshot?.documents else {
-                print("No documents")
-                return
+    func fetchRemoteProfile() -> Future<[Profile], ProfileAPIError> {
+        
+        return Future<[Profile], ProfileAPIError> { [weak self] promise in
+            guard let me = self else {
+                return promise(.failure(.genericError))
             }
             
-            self.profileList = documents.map { queryDocumentSnapshot -> Profile in
-                let data = queryDocumentSnapshot.data()
-                let name = data["name"] as? String ?? ""
+            me.db.collection("profile").addSnapshotListener { (querySnapshot, error) in
+                guard let documents = querySnapshot?.documents else {
+                    print("No documents")
+                    return
+                }
                 
-                return Profile(name: name)
+                let profileList = documents.map { queryDocumentSnapshot -> Profile in
+                    let data = queryDocumentSnapshot.data()
+                    let name = data["name"] as? String ?? ""
+                    
+                    return Profile(name: name)
+                }
                 
+                return promise(.success(profileList))
             }
-            
         }
+
     }
     
 }
