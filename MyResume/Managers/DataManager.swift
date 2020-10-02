@@ -47,8 +47,10 @@ extension DataManager: DataManagerProtocol {
                 let profileList = documents.map { queryDocumentSnapshot -> Profile in
                     let data = queryDocumentSnapshot.data()
                     let name = data["name"] as? String ?? ""
+                    let job = data["job"] as? String ?? ""
+                    let tech = data["tech"] as? String ?? ""
                     
-                    return Profile(name: name)
+                    return Profile(name: name, job: job, tech: tech)
                 }
                 
                 return promise(.success(profileList))

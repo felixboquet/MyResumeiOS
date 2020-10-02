@@ -30,11 +30,11 @@ struct ProfileView: View {
                         .font(.title)
                         .foregroundColor(.white)
                     HStack(alignment: .top) {
-                        Text("Ingénieur développement mobile")
+                        Text(viewModel.profile.job ?? "")
                             .font(.subheadline)
                             .foregroundColor(.white)
                         Spacer()
-                        Text("iOS/Android")
+                        Text(viewModel.profile.tech ?? "")
                             .font(.subheadline)
                             .foregroundColor(.white)
                     }
