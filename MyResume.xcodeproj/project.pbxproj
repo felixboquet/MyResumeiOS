@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		931E5EA1250B54FC0082BADF /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931E5EA0250B54FC0082BADF /* DataManager.swift */; };
+		93D99E98252C532A008FEE02 /* MyResume.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 93D99E96252C532A008FEE02 /* MyResume.xcdatamodeld */; };
+		93D99E9B252C5438008FEE02 /* Profile+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D99E99252C5438008FEE02 /* Profile+CoreDataClass.swift */; };
+		93D99E9C252C5438008FEE02 /* Profile+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D99E9A252C5438008FEE02 /* Profile+CoreDataProperties.swift */; };
+		93D99E9F252C5695008FEE02 /* RemoteProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D99E9E252C5695008FEE02 /* RemoteProfile.swift */; };
+		93D99EA2252CBCE5008FEE02 /* ProfileApplicationLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D99EA1252CBCE4008FEE02 /* ProfileApplicationLogic.swift */; };
+		93D99EA7252CC520008FEE02 /* ProfileNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D99EA6252CC520008FEE02 /* ProfileNetworkService.swift */; };
 		93DA6A4E2523C1B300521A7D /* ProfileAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DA6A4D2523C1B300521A7D /* ProfileAPIError.swift */; };
 		93DD5F5524FE70FE008BE087 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DD5F5424FE70FE008BE087 /* AppDelegate.swift */; };
 		93DD5F5724FE70FE008BE087 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DD5F5624FE70FE008BE087 /* SceneDelegate.swift */; };
@@ -20,13 +26,18 @@
 		93DD5F7924FE971D008BE087 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DD5F7824FE971D008BE087 /* ProfileViewModel.swift */; };
 		93DD5F8024FF8AEB008BE087 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DD5F7F24FF8AEB008BE087 /* CircleImage.swift */; };
 		93EFAECD25276952001D6029 /* Degree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EFAECB25276952001D6029 /* Degree.swift */; };
-		93EFAECE25276952001D6029 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EFAECC25276952001D6029 /* Profile.swift */; };
 		ACB6DCFF46E4CC0A7EF2B69F /* Pods_MyResume.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA651CEB089D9D570941D237 /* Pods_MyResume.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7ABB274D5A470CA95AD29B98 /* Pods-MyResume.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyResume.debug.xcconfig"; path = "Target Support Files/Pods-MyResume/Pods-MyResume.debug.xcconfig"; sourceTree = "<group>"; };
 		931E5EA0250B54FC0082BADF /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		93D99E97252C532A008FEE02 /* MyResume.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyResume.xcdatamodel; sourceTree = "<group>"; };
+		93D99E99252C5438008FEE02 /* Profile+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		93D99E9A252C5438008FEE02 /* Profile+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		93D99E9E252C5695008FEE02 /* RemoteProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteProfile.swift; sourceTree = "<group>"; };
+		93D99EA1252CBCE4008FEE02 /* ProfileApplicationLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileApplicationLogic.swift; sourceTree = "<group>"; };
+		93D99EA6252CC520008FEE02 /* ProfileNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileNetworkService.swift; sourceTree = "<group>"; };
 		93DA6A4D2523C1B300521A7D /* ProfileAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileAPIError.swift; sourceTree = "<group>"; };
 		93DD5F5124FE70FE008BE087 /* MyResume.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyResume.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93DD5F5424FE70FE008BE087 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,7 +52,6 @@
 		93DD5F7824FE971D008BE087 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		93DD5F7F24FF8AEB008BE087 /* CircleImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		93EFAECB25276952001D6029 /* Degree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Degree.swift; sourceTree = "<group>"; };
-		93EFAECC25276952001D6029 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		E60E9BB5ABD25B3F6DAE81DE /* Pods-MyResume.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyResume.release.xcconfig"; path = "Target Support Files/Pods-MyResume/Pods-MyResume.release.xcconfig"; sourceTree = "<group>"; };
 		EA651CEB089D9D570941D237 /* Pods_MyResume.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyResume.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -65,6 +75,30 @@
 				E60E9BB5ABD25B3F6DAE81DE /* Pods-MyResume.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		93D99E9D252C5689008FEE02 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				93D99E9E252C5695008FEE02 /* RemoteProfile.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		93D99EA0252CBCC9008FEE02 /* ApplicationLogics */ = {
+			isa = PBXGroup;
+			children = (
+				93D99EA1252CBCE4008FEE02 /* ProfileApplicationLogic.swift */,
+			);
+			path = ApplicationLogics;
+			sourceTree = "<group>";
+		};
+		93D99EA3252CC2CD008FEE02 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				93D99EA6252CC520008FEE02 /* ProfileNetworkService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		93DA6A4C2523C19B00521A7D /* Errors */ = {
@@ -96,12 +130,15 @@
 		93DD5F5324FE70FE008BE087 /* MyResume */ = {
 			isa = PBXGroup;
 			children = (
+				93D99EA0252CBCC9008FEE02 /* ApplicationLogics */,
 				93DA6A4C2523C19B00521A7D /* Errors */,
 				93DD5F7024FE748B008BE087 /* Models */,
 				93DD5F6F24FE7466008BE087 /* Managers */,
+				93D99EA3252CC2CD008FEE02 /* Services */,
 				93DD5F6E24FE7456008BE087 /* ViewModels */,
 				93DD5F6D24FE7449008BE087 /* Views */,
 				93DD5F5424FE70FE008BE087 /* AppDelegate.swift */,
+				93D99E96252C532A008FEE02 /* MyResume.xcdatamodeld */,
 				93DD5F5624FE70FE008BE087 /* SceneDelegate.swift */,
 				93DD5F5D24FE7100008BE087 /* Assets.xcassets */,
 				93DD5F6224FE7100008BE087 /* LaunchScreen.storyboard */,
@@ -149,6 +186,7 @@
 		93DD5F7024FE748B008BE087 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				93D99E9D252C5689008FEE02 /* Remote */,
 				93DD5F7C24FE9CBA008BE087 /* Entities */,
 			);
 			path = Models;
@@ -165,8 +203,9 @@
 		93DD5F7C24FE9CBA008BE087 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				93D99E99252C5438008FEE02 /* Profile+CoreDataClass.swift */,
+				93D99E9A252C5438008FEE02 /* Profile+CoreDataProperties.swift */,
 				93EFAECB25276952001D6029 /* Degree.swift */,
-				93EFAECC25276952001D6029 /* Profile.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -296,14 +335,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				93DD5F7724FE83FF008BE087 /* MapView.swift in Sources */,
-				93EFAECE25276952001D6029 /* Profile.swift in Sources */,
 				931E5EA1250B54FC0082BADF /* DataManager.swift in Sources */,
 				93DA6A4E2523C1B300521A7D /* ProfileAPIError.swift in Sources */,
+				93D99EA2252CBCE5008FEE02 /* ProfileApplicationLogic.swift in Sources */,
+				93D99E9B252C5438008FEE02 /* Profile+CoreDataClass.swift in Sources */,
+				93D99E98252C532A008FEE02 /* MyResume.xcdatamodeld in Sources */,
 				93DD5F5524FE70FE008BE087 /* AppDelegate.swift in Sources */,
 				93EFAECD25276952001D6029 /* Degree.swift in Sources */,
 				93DD5F8024FF8AEB008BE087 /* CircleImage.swift in Sources */,
 				93DD5F7224FE7F35008BE087 /* ProfileView.swift in Sources */,
 				93DD5F5724FE70FE008BE087 /* SceneDelegate.swift in Sources */,
+				93D99EA7252CC520008FEE02 /* ProfileNetworkService.swift in Sources */,
+				93D99E9F252C5695008FEE02 /* RemoteProfile.swift in Sources */,
+				93D99E9C252C5438008FEE02 /* Profile+CoreDataProperties.swift in Sources */,
 				93DD5F7924FE971D008BE087 /* ProfileViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -500,6 +544,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		93D99E96252C532A008FEE02 /* MyResume.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				93D99E97252C532A008FEE02 /* MyResume.xcdatamodel */,
+			);
+			currentVersion = 93D99E97252C532A008FEE02 /* MyResume.xcdatamodel */;
+			path = MyResume.xcdatamodeld;
+			sourceTree = SOURCE_ROOT;
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 93DD5F4924FE70FE008BE087 /* Project object */;
 }

@@ -1,35 +1,18 @@
 //
-//  DataManager.swift
+//  ProfileNetworkService.swift
 //  MyResume
 //
-//  Created by Féfé on 11/09/2020.
+//  Created by Féfé on 06/10/2020.
 //  Copyright © 2020 Felix Boquet. All rights reserved.
 //
 
 import Foundation
-import FirebaseFirestore
 import Combine
+import FirebaseFirestore
 
-protocol DataManagerProtocol {
-    var profileList: [Profile] { get }
-    func fetchProfile() -> [Profile]
-    func fetchRemoteProfile() -> Future<[RemoteProfile], ProfileAPIError>
-}
-
-class DataManager {
-    static let shared: DataManagerProtocol = DataManager()
+struct ProfileNetworkService {
+    
     private var db = Firestore.firestore()
-    var profileList = [Profile]()
-    
-    private init() { }
-}
-
-// MARK: - DataManagerProtocol implementation
-extension DataManager: DataManagerProtocol {
-    
-    func fetchProfile() -> [Profile] {
-        return profileList
-    }
     
     func fetchRemoteProfile() -> Future<[RemoteProfile], ProfileAPIError> {
         
@@ -56,7 +39,6 @@ extension DataManager: DataManagerProtocol {
                 return promise(.success(profileList))
             }
         }
-
     }
     
 }
