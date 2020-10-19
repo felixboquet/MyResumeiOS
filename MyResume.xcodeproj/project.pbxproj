@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		931E5EA1250B54FC0082BADF /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931E5EA0250B54FC0082BADF /* DataManager.swift */; };
+		93D28A39253DD24F004AF22E /* Color+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D28A38253DD24F004AF22E /* Color+extensions.swift */; };
 		93DA6A4E2523C1B300521A7D /* ProfileAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DA6A4D2523C1B300521A7D /* ProfileAPIError.swift */; };
 		93DD5F5524FE70FE008BE087 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DD5F5424FE70FE008BE087 /* AppDelegate.swift */; };
 		93DD5F5724FE70FE008BE087 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DD5F5624FE70FE008BE087 /* SceneDelegate.swift */; };
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		7ABB274D5A470CA95AD29B98 /* Pods-MyResume.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyResume.debug.xcconfig"; path = "Target Support Files/Pods-MyResume/Pods-MyResume.debug.xcconfig"; sourceTree = "<group>"; };
 		931E5EA0250B54FC0082BADF /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		93D28A38253DD24F004AF22E /* Color+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+extensions.swift"; sourceTree = "<group>"; };
 		93DA6A4D2523C1B300521A7D /* ProfileAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileAPIError.swift; sourceTree = "<group>"; };
 		93DD5F5124FE70FE008BE087 /* MyResume.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyResume.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93DD5F5424FE70FE008BE087 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +69,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		93D28A37253DD1E3004AF22E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				93D28A38253DD24F004AF22E /* Color+extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		93DA6A4C2523C19B00521A7D /* Errors */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +106,7 @@
 		93DD5F5324FE70FE008BE087 /* MyResume */ = {
 			isa = PBXGroup;
 			children = (
+				93D28A37253DD1E3004AF22E /* Extensions */,
 				93DA6A4C2523C19B00521A7D /* Errors */,
 				93DD5F7024FE748B008BE087 /* Models */,
 				93DD5F6F24FE7466008BE087 /* Managers */,
@@ -297,6 +308,7 @@
 			files = (
 				93DD5F7724FE83FF008BE087 /* MapView.swift in Sources */,
 				93EFAECE25276952001D6029 /* Profile.swift in Sources */,
+				93D28A39253DD24F004AF22E /* Color+extensions.swift in Sources */,
 				931E5EA1250B54FC0082BADF /* DataManager.swift in Sources */,
 				93DA6A4E2523C1B300521A7D /* ProfileAPIError.swift in Sources */,
 				93DD5F5524FE70FE008BE087 /* AppDelegate.swift in Sources */,

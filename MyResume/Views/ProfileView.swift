@@ -9,9 +9,36 @@
 import SwiftUI
 import MapKit
 
+struct DarkBackground<S: Shape>: View {
+    var shape: S
+
+    var body: some View {
+        ZStack {
+
+            shape
+                .fill(Color.darkEnd)
+                .shadow(color: Color.darkStart, radius: 10, x: -10, y: -10)
+                .shadow(color: Color.darkEnd, radius: 10, x: 10, y: 10)
+            
+        }
+    }
+}
+
+struct DarkButtonStyle: ButtonStyle {
+    func makeBody(configuration: Self.Configuration) -> some View {
+        configuration.label
+            .padding(30)
+            .contentShape(Circle())
+            .background(
+                DarkBackground(shape: Circle())
+            )
+    }
+}
+
 struct ProfileView: View {
     
     @ObservedObject var viewModel = ProfileViewModel()
+    @State private var isVisible = false
     
     var body: some View {
         VStack {
@@ -24,6 +51,12 @@ struct ProfileView: View {
                 CircleImage()
                     .offset(y: -130)
                     .padding(.bottom, -130)
+                    .scaleEffect(isVisible ? 1.5 : 0)
+                    .onAppear {
+                        withAnimation(.easeIn(duration: 1)) {
+                            self.isVisible.toggle()
+                        }
+                    }
                 
                 VStack(alignment: .leading) {
                     Text(viewModel.profile.name ?? "")
@@ -47,14 +80,16 @@ struct ProfileView: View {
                     Button(action: {
                         // your action here
                     }) {
-                        Text("Expériences")
+                        Image(systemName: "book")
+                            .foregroundColor(.white)
                     }
+                    .buttonStyle(DarkButtonStyle())
                 }.padding(.top, 64)
             }
             Spacer()
         }
         .edgesIgnoringSafeArea(.all)
-        .background(Color.black)
+        .background(LinearGradient(gradient: Gradient(colors: [Color.darkStart, Color.darkEnd]), startPoint: .leading, endPoint: .trailing))
         
     }
 }
